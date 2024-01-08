@@ -29,10 +29,10 @@ jobs:
        
     
         # Cloner le référentiel Git sur le serveur distant
-        ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 'cd ${{ secrets.SSH_PATH }} && git pull origin main || git clone https://github.com/Abdoulrachard/justice-suite.git ${{ secrets.SSH_PATH }}' 
+        ssh -p 65002 u464255773@31.170.164.46 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 'cd ${{ secrets.SSH_PATH }} && git pull origin main || git clone https://github.com/Abdoulrachard/justice-suite.git ${{ secrets.SSH_PATH }}' 
     
         # Installer les dépendances avec Composer
-        ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 'cd ${{ secrets.SSH_PATH }} && composer install --no-dev --optimize-autoloader'
+        ssh -p 65002 u464255773@31.170.164.46 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 'cd ${{ secrets.SSH_PATH }} && composer install --no-dev --optimize-autoloader'
     
         
         
