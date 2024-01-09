@@ -94,7 +94,7 @@ if (isset($_POST['submit'])) {
                                 <div class="humberger ">
                                     <i class="fas fa-bars burgerIcon"></i>
                                 </div>
-                                <nav class="rs-menu rs-menu-close " style="height: 0;">
+                                <nav class="rs-menu rs-menu-close rsmenuser" style="height: 0;">
                                     <ul class="onpage-menu nav-menu" id="onpage-menu">
                                         <li ><a href="#home" class="action">Accueil</a></li>
                                         <li ><a href="#about" class="action">Cabinet Xavier Termeau ?</a></li>

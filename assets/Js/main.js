@@ -12,13 +12,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // rsmenu.style.setProperty("display", "none", "important");
     humberger.addEventListener('click', function (e) {
         
-        rsmenu.classList.toggle('d-play');
+        rsmenu.classList.toggle('rsmenuser');
     });
     // document.addEventListener('click', function (event) {
     //     if (!rsmenu.contains(event.target) && !humberger.contains(event.target)) {
     //         rsmenu.classList.add('d-nones');
     //     }
     // });
+    
     if (toolbarInfo && menuArea && menu) {
         const toolbarInfoHeight = toolbarInfo.clientHeight;
         const imageHeight = menu.clientHeight
