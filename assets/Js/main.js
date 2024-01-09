@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
         
         rsmenu.classList.toggle('rsmenuser');
     });
-    // document.addEventListener('click', function (event) {
-    //     if (!rsmenu.contains(event.target) && !humberger.contains(event.target)) {
-    //         rsmenu.classList.add('d-nones');
-    //     }
-    // });
+    document.addEventListener('click', function (event) {
+        if (!rsmenu.contains(event.target) && !humberger.contains(event.target)) {
+            rsmenu.classList.add('d-nones');
+        }
+    });
     
     if (toolbarInfo && menuArea && menu) {
         const toolbarInfoHeight = toolbarInfo.clientHeight;
