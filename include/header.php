@@ -89,6 +89,12 @@
     transform: translate3d(4px, 0, 0);
   }
 }
+@media screen and (max-width: 430px) {
+  #loading.image-preloader .loader {
+    width: 80%; /* Ajuster la largeur selon vos besoins */
+    max-width: 300px; /* Définir une largeur maximale si nécessaire */
+  }
+}
 </style>
 </head>
 <body id="home">

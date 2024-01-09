@@ -657,6 +657,9 @@ button{
     }
 }
 @media  screen and (max-width: 767px) {
+    body{
+        overflow: hidden !important;
+    }
     .contact-inner-page input{
         margin-top: 20px;
     }
