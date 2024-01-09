@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const humberger = document.querySelector('.humberger');
     const rsmenu = document.querySelector('.rs-menu-close');
     const spiner = document.querySelector('.spinner-border-sm');
-
+    rsmenu.classList.add('d-nones')
     humberger.addEventListener('click', function (e) {
-
-        // rsmenu.classList.toggle('d-none');
+        
+        rsmenu.classList.toggle('d-none');
     });
     document.addEventListener('click', function (event) {
         if (!rsmenu.contains(event.target) && !humberger.contains(event.target)) {
-            rsmenu.classList.add('d-none');
+            rsmenu.classList.add('d-nones');
         }
     });
     if (toolbarInfo && menuArea && menu) {
