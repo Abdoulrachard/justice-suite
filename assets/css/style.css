@@ -126,7 +126,7 @@ img{
     
 }
 .rs-menu{
-    display: block
+    display: block ;
 }
 .rs-menu ul li {
     list-style: none;
@@ -672,17 +672,17 @@ button{
         height: 0px !important;
     }
     .d-none{
-        display: block;  
+        display: block !important;  
     }
-    .d-nones{
+    /* .d-nones{
         display: none !important;
-    }
+    } */
     .rs-menu-close{
         top: 20px;
         transition: transform 0.5s ease-in-out;
-        margin: 0 -65%;
+        margin: 0 -20%;
         /* jai enlevr de -80% a -65% et en bas de 3% a 20px */
-        margin-right: 20px;               
+        margin-right: 0px;               
     }
     .rsmenu{
         display: none;
@@ -720,7 +720,7 @@ button{
         transform: translateY(-70%);
     }
     .sl-sub-title {
-        margin-top: 15px;
+        margin-top: 10px;
         font-size: 20px;
         font-weight:normal;
         transform: translateY(-28%);
