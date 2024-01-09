@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
    
     humberger.addEventListener('click', function (e) {
         
-        rsmenu.classList.toggle('d-none');
+        rsmenu.classList.toggle('d-play');
     });
     // document.addEventListener('click', function (event) {
     //     if (!rsmenu.contains(event.target) && !humberger.contains(event.target)) {

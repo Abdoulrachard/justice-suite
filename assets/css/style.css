@@ -671,12 +671,11 @@ button{
         position: relative !important;
         height: 0px !important;
     }
-    .d-none{
-        display: block !important;  
-    }
+    
     /* .d-nones{
         display: none !important;
     } */
+    
     .rs-menu-close{
         top: 20px;
         transition: transform 0.5s ease-in-out;
@@ -685,7 +684,7 @@ button{
         margin-right: 0px;               
     }
     .rsmenu{
-        display: none;
+        display: none !important;
     }
     .rs-menu ul li {
         list-style: none;
@@ -720,7 +719,7 @@ button{
         transform: translateY(-70%);
     }
     .sl-sub-title {
-        margin-top: 10px;
+        margin-top: 5px;
         font-size: 20px;
         font-weight:normal;
         transform: translateY(-28%);
@@ -749,9 +748,10 @@ button{
     .content-part::after{
         display: none;
     }
+    /* 00 */
     .content-part::before {
-        height: 80%;
-        bottom: 40px;
+        height: 75%;
+        bottom: 60px;
         right: 0px;
     }
     .preview::before , .preview::after{
