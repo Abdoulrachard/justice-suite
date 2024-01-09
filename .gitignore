@@ -1,0 +1,2 @@
+# Ignore le répertoire vendor généré par Composer
+/vendor/
