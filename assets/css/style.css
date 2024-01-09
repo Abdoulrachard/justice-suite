@@ -677,7 +677,7 @@ button{
     .rs-menu-close{
         top: 25px;
         transition: all 0.5s ease-in-out;
-        margin: 0 -60%;
+        margin: 0 -65%;
         /* jai enlevr de -80% a -65% et en bas de 3% a 20px */
         margin-right: 0px;               
     }
