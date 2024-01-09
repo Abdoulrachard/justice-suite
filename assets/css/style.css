@@ -6,7 +6,7 @@ body{
     vertical-align: baseline;
     line-height: 26px ;
     font-weight: 400 !important;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-size: 15px ;
     color: #767676 !important;
    
