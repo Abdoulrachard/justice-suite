@@ -1,4 +1,4 @@
-name: PHP Deployment
+name: Deploy to FTP
 
 on:
   push:
@@ -8,33 +8,16 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up PHP
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.2'
-
-    - name: Install Composer
-      run: |
-        php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-        php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-        php -r "unlink('composer-setup.php');"
-
-    - name: Deploy via SSH
-      run: |
-        # Ajouter la clé SSH de l'hôte à known_hosts
-        ssh-keyscan -t ed25519 ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-
-    
-        # Cloner le référentiel Git sur le serveur distant
-        ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 'cd /cabinet-xaviertermeau.com && git pull origin main || git clone https://github.com/Abdoulrachard/justice-suite.git /cabinet-xaviertermeau.com'
-    
-        # Installer les dépendances avec Composer
-        ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 'cd /cabinet-xaviertermeau.com && composer install --no-dev --optimize-autoloader'
-    
-        
-        
+      - name: FTP deployment
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: "${{ secrets.SSH_PATH }}"
+           
