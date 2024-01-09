@@ -679,7 +679,7 @@ button{
     }
     .rs-menu-close{
         top: 20px;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.5s ease-in-out;
         margin: 0 -65%;
         /* jai enlevr de -80% a -65% et en bas de 3% a 20px */
         margin-right: 20px;               
@@ -720,7 +720,8 @@ button{
         transform: translateY(-70%);
     }
     .sl-sub-title {
-        font-size: 25px;
+        margin-top: 15px;
+        font-size: 20px;
         font-weight:normal;
         transform: translateY(-28%);
         line-height: normal !important;
