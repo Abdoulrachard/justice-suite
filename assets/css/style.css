@@ -672,15 +672,17 @@ button{
         height: 0px !important;
     }
     .d-none{
-        display: none;  
+        display: block !important;  
     }
     .rs-menu-close{
         top: 20px;
         transition: transform 0.3s ease-in-out;
         margin: 0 -80%;
-        margin-right: 3%;               
+        margin-right: 1%;               
     }
-    
+    .rsmenu{
+        display: none;
+    }
     .rs-menu ul li {
         list-style: none;
         display: flex !important;
@@ -717,6 +719,7 @@ button{
         font-size: 25px;
         font-weight:normal;
         transform: translateY(-28%);
+        line-height: normal !important;
     }
     .reda { 
         padding: 0 20px;
