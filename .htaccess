@@ -1,8 +1,1 @@
-RewriteEngine On
 
-RewriteCond %{HTTP_HOST} ^cche-ch\.com$ [NC]
-RewriteCond %{REQUEST_URI} !^/cche-ch/
-
-RewriteRule ^(.*)$ /cche-ch.com/index.html [L]
-
-RewriteCond %{HTTP_REFERER} !^$
