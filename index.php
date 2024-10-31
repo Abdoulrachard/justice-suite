@@ -64,7 +64,7 @@ if (isset($_POST['submit'])) {
                         <div class="toolbar-contact">
                             <ul>
                                 <li><i class="fa-regular fa-envelope"> </i><a href="contact@cabinet-xaviertermeau.com">contact@cabinet-xaviertermeau.com</a></li>
-                                <li><i class="fa fa-phone">  </i><a href="tel:+33757849985">+33 757849985</a></li>
+                                <li><i class="fa fa-phone">  </i><a href="tel:+33744080053">+33 744080053</a></li>
                                 <li class="clock"><i class="fa-regular fa-clock">  </i> 8:00 - 18:30 </li>
                             </ul>
                         </div>
@@ -252,7 +252,7 @@ if (isset($_POST['submit'])) {
                                     <div class="address-icon"><i class="icon-basic-smartphone"></i></div>
                                     <h5 class="contact-title">Téléphone</h5>
                                     <div class="address-text">
-                                        <a href="tel:+33757849985" >+33 757849985</a>
+                                        <a href="tel:+33744080053" >+33 744080053</a>
                                     </div>
                                 </div>
                                 <div class="address-item ml--5 mb-20">
